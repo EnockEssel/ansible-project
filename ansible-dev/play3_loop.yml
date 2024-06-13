@@ -1,0 +1,12 @@
+---
+- hosts: ws
+  become: yes
+  gather_facts: yes
+  ignore_errors: true
+  tasks:
+    - name: Packages installing
+      yum:
+        name:
+          - wget
+          - docker
+        state: present
