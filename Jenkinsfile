@@ -12,7 +12,7 @@ pipeline {
                 sh '''
                     curl -u Admin:AP8gcgmmset5jeYChTJYDN6XmDd -T \
                     ansible-${BUILD_ID}.zip \
-                    "http://ec2-54-83-138-116.compute-1.amazonaws.com:8081/artifactory/ansible/ansible-${BUILD_ID}.zip"
+                    "http://ec2-34-207-62-206.compute-1.amazonaws.com:8081/artifactory/ansible/ansible-${BUILD_ID}.zip"
                 '''
             }
         }
