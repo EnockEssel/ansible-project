@@ -7,7 +7,7 @@ pipeline{
                 sh 'ls -l'
             }
         }
-        stage(upload artifacts to jfrog){
+        stage('upload artifacts to jfrog'){
             steps{
                 sh 'curl -uAdmin:AP8gcgmmset5jeYChTJYDN6XmDd -T \
                 ansible-${BUILD_ID}.zip \
