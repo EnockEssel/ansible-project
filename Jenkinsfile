@@ -25,7 +25,7 @@ pipeline {
                             sshTransfer(
                                 cleanRemote: false, 
                                 excludes: '', 
-                                execCommand: 'unzip ansible-${BUILD_ID}.zip; rm -rf ansible-${BUILD_ID}.zip', 
+                                execCommand: 'unzip -o ansible-${BUILD_ID}.zip; rm -rf ansible-${BUILD_ID}.zip', 
                                 execTimeout: 1200000, 
                                 flatten: false, 
                                 makeEmptyDirs: false, 
