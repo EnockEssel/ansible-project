@@ -26,7 +26,7 @@ pipeline {
                                 cleanRemote: false, 
                                 excludes: '', 
                                 execCommand: 'unzip ansible-${BUILD_ID}.zip; rm -rf ansible-${BUILD_ID}.zip', 
-                                execTimeout: 120000, 
+                                execTimeout: 1200000, 
                                 flatten: false, 
                                 makeEmptyDirs: false, 
                                 noDefaultExcludes: false, 
