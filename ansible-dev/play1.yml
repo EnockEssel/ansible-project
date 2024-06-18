@@ -1,6 +1,6 @@
 
 ---
-- hosts: all
+- hosts: ws
   become: yes
   gather_facts: yes
   tasks:
